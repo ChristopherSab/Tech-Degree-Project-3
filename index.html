@@ -59,13 +59,36 @@
 
                 <label for="zip-code">Zip Code</label>
                 <input type="text" id="zip-code" name="user_zip-code">
-                
+
             </fieldset>
 
             <fieldset>
 
                 <legend>Newsletter</legend>
 
+                <label>Select the newsletters you would like to receive</label>
+
+                <input type="radio" id="html_news" value="html_news" name="news_option">
+                <label for="html_news">Html News</label>
+
+                <input type="radio" id="css_news" value="css_news" name="news_option">
+                <label for="css_news">Css News</label>
+
+                <input type="radio" id="javascript_news" value="javascript_news" name="news_option">
+                <label for="javascript_news">Javascript News</label>
+
+                <label>Newsletter format</label>
+
+                <input type="radio" id="html_format" value="html_format" name="format_option">
+                <label for="html_format">Html format</label>
+
+                <input type="radio" id="plain_format" value="plain_format" name="format_option">
+                <label for="plain_format">Plain text</label>
+
+
+                <label for="user_feedback">Other topics you'd like to hear about</label>
+
+                <textarea name="user_feedback" id="user_feedback"></textarea>
 
 
             </fieldset>
