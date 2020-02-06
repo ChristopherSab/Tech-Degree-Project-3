@@ -29,13 +29,13 @@ body{
 .intro-section {
     border-bottom: 3px solid black;
     text-align: center;
+    background-color: #f0f5f5;
 }
 
 .main-container {
         width: 80%;
         max-width: 1200px;
         margin: 0 auto;
-    
 }
 
 /*Main Section Styles*/
@@ -67,10 +67,15 @@ input[type=text],input[type=email], input[type=tel],select, textarea {
     border-radius: 4px;
     resize: vertical;
     background-color:#DCDCDC;
+    transition: ease-in-out, width .35s ease-in-out;
+
+  }
+
+  input:focus {
+    background-color:#8DD9D6;
   }
 
 .contact-section{
-
     border-bottom: 2px solid black;
     padding-bottom: 2.5rem;
 }
@@ -90,6 +95,11 @@ input[type=text],input[type=email], input[type=tel],select, textarea {
 .contact-flex > li > label {
   flex: 1 0 120px;
   max-width: 220px;
+}
+
+#zip-code{
+    max-width: 49%;
+    
 }
 
 .contact-flex > li > label + * {
