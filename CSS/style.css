@@ -21,14 +21,14 @@ body{
     text-align: center;
 }
 
-.main-title {
-    margin-top: 0;
-}
-
 .intro-section {
     border-bottom: 3px solid black;
     text-align: center;
     background-color: #f0f5f5;
+}
+
+.main-title {
+    margin-top: 0;
 }
 
 /*Main Section Styles*/
