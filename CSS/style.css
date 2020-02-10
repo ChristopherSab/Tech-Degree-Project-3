@@ -13,7 +13,6 @@ body{
     color: black;
 }
 
-
 /*Top Section Sytles*/
 
 .top-section {
@@ -32,18 +31,17 @@ body{
     background-color: #f0f5f5;
 }
 
-.main-container {
-        width: 80%;
-        max-width: 1200px;
-        margin: 0 auto;
-}
-
 /*Main Section Styles*/
+
+.main-container {
+    margin: 0 0.5rem;
+}
 
 form {
     margin-top: 0.1rem;
+    margin-bottom: 0;
     border-top: 2px solid black;
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
 }
 
 .form-heading{
@@ -67,8 +65,7 @@ input[type=text],input[type=email], input[type=tel],select, textarea {
     border-radius: 4px;
     resize: vertical;
     background-color:#DCDCDC;
-    transition: ease-in-out, width .35s ease-in-out;
-
+    transition: .40s ease-in-out;
   }
 
   input:focus {
@@ -89,26 +86,27 @@ input[type=text],input[type=email], input[type=tel],select, textarea {
 .contact-flex li {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .contact-flex > li > label {
-  flex: 1 0 120px;
+  flex: 1 0 220px;
   max-width: 220px;
 }
 
-#zip-code{
-    max-width: 49%;
-    
+label[for=state]{
+    color: gray;
+}
+
+#zip-code {
+    max-width: 33%;
 }
 
 .contact-flex > li > label + * {
   flex: 1 0 220px;
 }
 
-
-  
-  button[type=submit] {
+button[type=submit] {
     background-color: #49d1cc;
     color: white;
     padding: 12px 15px;
@@ -122,24 +120,21 @@ input[type=text],input[type=email], input[type=tel],select, textarea {
     background-color:#46C2E8;
   }
 
-
-
 ::placeholder {
     font-style: italic;
     text-align: end;
     padding: 0 0.5rem;
 }
 
-.placeholder {
-    color: gray
-  }
-
 .newsletter-section {
     margin-top: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 #copyright-text{
     text-align: center;
+    font-style: italic;
 }
 
 .newsletter-type {
@@ -149,6 +144,19 @@ input[type=text],input[type=email], input[type=tel],select, textarea {
 .newsletter-format {
     margin-bottom: 1.5rem;
 }
+
+@media (min-width: 768px) {
+
+    .main-container {
+        max-width: 65vw;
+        margin: 0 auto;
+    }
+
+    #zip-code {
+        max-width: 25%;
+    }
+
+  }
 
 
    

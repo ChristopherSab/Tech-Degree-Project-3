@@ -45,19 +45,19 @@
                     </li>
                     <li>
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="user_phone">
+                        <input type="tel" id="phone" name="user_phone" required placeholder="Required">
                     </li>
                     <li>
                         <label for="address">Street Address</label>
-                        <input type="text" id="address" name="user_address">
+                        <input type="text" id="address" name="user_address" required placeholder="Required">
                     </li>
                     <li>
                         <label for="city">City</label>
-                        <input type="text" id="city" name="user_city">
+                        <input type="text" id="city" name="user_city" required placeholder="Required">
                     </li>
                     <li>
                         <label for="state">State</label>
-                        <select name="user_state" id="state" placeholder="choose state">
+                        <select name="user_state" id="state">
                             <option value="" selected class="placeholder" hidden disabled>Select State</option>
                             <option value="california">California</option>
                             <option value="florida">Florida</option>
@@ -70,7 +70,7 @@
 
                     <li>
                         <label for="zip-code">Zip Code</label>
-                        <input type="text" id="zip-code" name="user_zip-code">
+                        <input type="text" id="zip-code" name="user_zip-code" required placeholder="Required">
                     </li>
                 </ul>
 
@@ -84,15 +84,15 @@
 
                 <ul class="newsletter-flex">
                     <li>
-                        <input type="radio" id="html_news" value="html_news" name="news_option">
+                        <input type="checkbox" id="html_news" value="html_news" name="news_option">
                         <label for="html_news">Html News</label>
                     </li>
                     <li>
-                        <input type="radio" id="css_news" value="css_news" name="news_option">
+                        <input type="checkbox" id="css_news" value="css_news" name="news_option">
                         <label for="css_news">Css News</label>
                     </li>
                     <li>
-                        <input type="radio" id="javascript_news" value="javascript_news" name="news_option">
+                        <input type="checkbox" id="javascript_news" value="javascript_news" name="news_option">
                         <label for="javascript_news">Javascript News</label>
                     </li>
                 </ul>
@@ -121,9 +121,12 @@
 
             </fieldset>
 
-            <p id="copyright-text">Copyright The Code Review</p>
-
         </form>
+
+        <footer>
+            <p id="copyright-text">Copyright The Code Review</p>
+        </footer>
+
     </div>
 
 </body>
