@@ -132,6 +132,10 @@ button[type=submit] {
     padding-bottom: 0;
 }
 
+label[for="user_feedback"] {
+    margin-top: 1rem;
+}
+
 #copyright-text{
     text-align: center;
     font-style: italic;
